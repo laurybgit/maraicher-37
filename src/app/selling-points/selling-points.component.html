@@ -1,0 +1,102 @@
+<h2>Vente directe</h2>
+<section id="vente-surplace">
+  <article>
+    <!-- Ajouter cagette.net de manière visible -->
+    <h3>Réservation en ligne, retrait à l'exploitation</h3>
+    <p>
+      Réservez votre panier sur cagette.net et venez le récupérer sur place.
+    </p>
+    <p>
+      N'hésitez pas à <a routerLink="/contact">nous contacter</a> pour toute
+      demande d'information.
+    </p>
+
+    <h3><i class="far fa-clock"></i> &nbsp; Horaires d'ouverture</h3>
+    <p>lun. <b>08h - 16h</b></p>
+    <p>mar. <b>08h - 16h</b></p>
+    <p>mer. <b>08h - 16h</b></p>
+    <p>jeu. <b>08h - 16h</b></p>
+    <p>ven. <b>08h - 16h</b></p>
+    <p>sam. <b>08h - 16h</b></p>
+  </article>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5415.157653175381!2d0.9958581!3d47.2639385!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcb86be9d7aecf%3A0xec8a6111caca5313!2sLe%20Hachereau%2C%2037310%20Sublaines!5e0!3m2!1sfr!2sfr!4v1630394946332!5m2!1sfr!2sfr"
+    width="500"
+    height="450"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+  ></iframe>
+  <div>
+    <h3>Vente en bord de route</h3>
+    <p>À compléter :)</p>
+  </div>
+</section>
+
+<hr />
+
+<section>
+  <h2>Autres points de vente</h2>
+  <div id="cards">
+    <article>
+      <div style="width: 35rem">
+        <img src="../../assets/icons/camera-solid.svg" alt="" />
+        <h3>De mes Terres - Magasin de producteurs</h3>
+        <p><b>Où ?</b> Rue Étienne Jean Baptiste Cartier, 37400 Amboise</p>
+      </div>
+    </article>
+    <article>
+      <div style="width: 35rem">
+        <img src="../../assets/icons/camera-solid.svg" alt="" />
+        <h3>Centhé 37</h3>
+        <p><b>Où ?</b> 38 rue du Pont, 37150 Bléré</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- <section>
+  <h2>Autres points de vente</h2>
+  <div id="cards">
+    <article *ngFor="let sellingPoint of sellingPoints">
+      <div style="width: 35rem">
+        <h3>{{ sellingPoint.title }}</h3>
+        <img
+          [src]="SELLING_POINTS_IMAGES_FOLDER + sellingPoint.image"
+          class="card-img-top"
+          alt="Photo du point de vente"
+        />
+        <p><b>Où ?</b> {{ sellingPoint.address }}</p>
+      </div>
+    </article>
+  </div>
+</section> -->
+
+<hr />
+
+<section>
+  <h2>Partenariats locaux</h2>
+  <article id="partenariats">
+    <div>
+      <h3>Cantine scolaire de Bléré</h3>
+      <p>
+        Le collège Jean Papillon de Bléré a toujours eu à cœur de proposer des
+        plats sains et locaux. Depuis la rentrée 2021, je fournis la cantine en
+        fruits et légumes et participe à la confection des recettes avec le chef
+        cuisinier.
+      </p>
+
+      <p>
+        Afin d'accompagner les enfants dans leur diversification alimentaire,
+        nous proposons des thématiques autour des légumes, par exemple la
+        journée des légumes anciens, afin de motiver les petits et petites à
+        goûter des plats qui les inquiètent.
+      </p>
+    </div>
+    <img
+      src="../../assets/img/cantine.jpg"
+      alt="Cantine de Bléré"
+      class="img-fluid"
+    />
+  </article>
+</section>

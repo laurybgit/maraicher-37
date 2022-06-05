@@ -1,0 +1,80 @@
+#bandeau-contact {
+  /* Image de fond  */
+  background: url("../../assets/img/legumes-mains.jpg");
+  background-size: auto;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+
+section {
+  margin: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    #contact {
+      margin-top: 3rem;
+      border-radius: 10%;
+      color: black;
+      border: 3px solid var(--purple-touch);
+      padding: 2rem;
+
+      a {
+        font-weight: bold;
+        color: var(--purple-touch);
+      }
+    }
+
+    img {
+      margin-bottom: 1rem;
+      width: 3rem;
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+  }
+}
+
+hr {
+  margin: 0 5rem;
+}
+
+section:nth-child(3) {
+  display: inline;
+  text-align: center;
+
+  p {
+    margin: 5rem;
+  }
+}
+
+/* _______________________ Ajustements responsive __________________________ */
+@media screen and(max-width: 1024px) {
+  section {
+    flex-wrap: wrap;
+    padding: 3rem;
+
+    article + article {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media screen and(min-width:880px) {
+  #fb-title {
+    display: none;
+  }
+}
+
+@media screen and(max-width: 880px) {
+  .fb-page {
+    display: none;
+  }
+}

@@ -1,0 +1,115 @@
+main {
+  //margin: 1.6rem;
+
+  /* ------------------------------------- Bandeau accueil ------------------------- */
+  #home {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10rem;
+    color: var(--black);
+    text-align: center;
+
+    /* Image de fond  */
+    background: url("../../assets/img/legumes-divers-fond-bleu2.jpg");
+    background-size: auto;
+    background-size: cover;
+    background-position: center;
+    div {
+      background: var(--main-orange-transparent);
+      padding: 5rem;
+      border: 0.5rem black double;
+      margin: 2rem 0;
+
+      img {
+        max-width: 12rem;
+        margin-left: 3rem;
+      }
+
+       h1 {
+        font-size: 5rem;
+        margin: 2rem;
+      }
+
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+/* Section de présentation */
+section + section {
+  display: flex;
+  padding: 5rem;
+  text-align: justify;
+
+  img {
+    width: 75%;
+    height: 75%;
+  }
+
+  article {
+    margin-left: 2rem;
+
+    p {
+      margin-top: 3rem;
+    }
+
+    div {
+      text-align: left;
+    }
+
+    button {
+      margin-top: 3rem;
+      font-size: 2rem;
+      background-color: var(--main-green);
+      transition: all 500ms ease-in-out;
+    }
+
+    button:hover {
+      color: white;
+    }
+  }
+}
+
+/* ------------------------------------- Ajustements responsive ------------------------------ */
+// ordinateurs portables / basse résolution, tablettes format portrait < 1599px
+@media screen and (max-width: 1024px) {
+  main {
+    #home {
+      div {
+        padding: 0.5rem;
+      }
+    }
+
+    section + section {
+      text-align: left;
+      justify-content: center;
+      padding: 3rem;
+
+      img {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+// tablettes < 959px
+@media screen and (max-width: 959px) {
+  main {
+    figure {
+      text-align: center;
+    }
+
+    section + section {
+      flex-wrap: wrap;
+    }
+  }
+}

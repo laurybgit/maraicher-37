@@ -1,0 +1,75 @@
+/* ------------------------------------- Navigation ------------------------------ */
+header {
+  nav {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2rem;
+
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+    a {
+      padding: 1.4rem 5rem;
+      color: var(--black);
+      text-decoration: none;
+      transition: 500ms;
+
+      &:hover {
+        color: var(--main-green);
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-color: var(--main-green);
+      }
+    }
+
+    .active {
+      color: var(--main-green);
+      text-decoration: underline;
+      text-decoration-color: var(--main-green);
+      text-underline-offset: 1rem;
+    }
+  }
+}
+
+/* Navigation sur mobile */
+.navbar {
+  background-color: var(--main-green);
+}
+
+.navbar-mobile {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .active {
+    color: var(--main-green);
+    text-decoration: underline;
+    text-decoration-color: var(--main-green);
+  }
+}
+
+li {
+  list-style-type: none;
+}
+/* ___________________________ Ajustements responsive ________________________________ */
+// Affichage du menu jusqu'à 1024px et masquage de la navbar mobile
+@media screen and (min-width: 880px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .navbar-screen {
+    display: none;
+  }
+}

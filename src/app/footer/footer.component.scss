@@ -1,0 +1,32 @@
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--purple-touch);
+  padding: 3rem;
+
+  img {
+    width: 5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    font-family: "Merriweather", serif;
+  }
+
+  p {
+    margin-top: 3rem;
+  }
+
+  p + p {
+    margin-top: 0;
+  }
+
+  a {
+    margin-top: 3rem;
+    color: white;
+    text-decoration: underline;
+  }
+}
