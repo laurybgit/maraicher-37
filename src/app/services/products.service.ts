@@ -1,18 +1,18 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Product } from 'src/app/models/product.model';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Product } from "src/app/models/product.model";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class ProductsService {
-  private API_PRODUCTS_URL = 'http://localhost:8000/api/products';
+  private API_PRODUCTS_URL = "http://localhost:8000/api/products";
 
   constructor(private httpClient: HttpClient) {
     //this.getProducts();
   }
 
-  async getProducts(): Promise<Product[] | null> {
+  /*async getProducts(): Promise<Product[] | null> {
     let data = null;
     try {
       const response = await this.httpClient
@@ -25,5 +25,5 @@ export class ProductsService {
     } catch (error) {
       return console.log('erreur, raison :'), error;
     }
-  }
+  }*/
 }

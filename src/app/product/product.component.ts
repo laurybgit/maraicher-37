@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ProductsService } from '../services/products.service';
-import { Product } from 'src/app/models/product.model';
+import { Component, OnInit } from "@angular/core";
+import { ProductsService } from "../services/products.service";
+import { Product } from "src/app/models/product.model";
 
 //prettier-ignore
 @Component({
@@ -14,8 +14,8 @@ export class ProductComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     //@ts-ignore
-    this.products = await this.productsService.getProducts();
-    console.log(this.products);
+    //this.products = await this.productsService.getProducts();
+    //console.log(this.products);
     //console.log(this.products[0]);
   }
 }

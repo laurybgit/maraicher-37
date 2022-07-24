@@ -1,12 +1,12 @@
-import { Component, OnInit, SimpleChange } from '@angular/core';
-import { Router } from '@angular/router';
-import { faWindowRestore } from '@fortawesome/free-solid-svg-icons';
-import { ContactService } from '../services/contact.service';
+import { Component, OnInit, SimpleChange } from "@angular/core";
+import { Router } from "@angular/router";
+import { faWindowRestore } from "@fortawesome/free-solid-svg-icons";
+import { ContactService } from "../services/contact.service";
 
 @Component({
-  selector: 'app-contact-page',
-  templateUrl: './contact-page.component.html',
-  styleUrls: ['./contact-page.component.scss'],
+  selector: "app-contact-page",
+  templateUrl: "./contact-page.component.html",
+  styleUrls: ["./contact-page.component.scss"],
 })
 export class ContactPageComponent implements OnInit {
   contact: [] = [];
@@ -14,6 +14,6 @@ export class ContactPageComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     //@ts-ignore
-    this.contact = await this.contactService.getContact();
+    //this.contact = await this.contactService.getContact();
   }
 }

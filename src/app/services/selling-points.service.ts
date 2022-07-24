@@ -1,16 +1,16 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class SellingPointsService {
-  private API_SELLING_POINTS_URL = 'http://localhost:8000/api/selling_points';
+  private API_SELLING_POINTS_URL = "http://localhost:8000/api/selling_points";
 
   constructor(private httpClient: HttpClient) {}
 
   // uniformiser les retours du service. Exemple : renvoyer tjs un objet (propriété success : true/false, propriété data: data ou null)
-  async getSellingPoints(): Promise<void[] | any> {
+  /*async getSellingPoints(): Promise<void[] | any> {
     let data: any = null;
     try {
       const response = await this.httpClient
@@ -26,5 +26,5 @@ export class SellingPointsService {
     } catch (error) {
       return console.log('erreur, raison :'), error;
     }
-  }
+  }*/
 }
